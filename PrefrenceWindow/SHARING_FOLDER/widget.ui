@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>334</width>
+    <height>282</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="addButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: qconicalgradient(cx:0.005, cy:0.0113636, angle:135, stop:0 rgba(68, 68, 68, 69), stop:0.210526 rgba(93, 93, 93, 255), stop:0.331579 rgba(68, 65, 19, 232), stop:0.363158 rgba(98, 98, 98, 130), stop:0.423533 rgba(132, 132, 132, 254), stop:0.45 rgba(115, 115, 115, 208), stop:0.594737 rgba(107, 107, 107, 255), stop:0.694737 rgba(115, 115, 0, 69), stop:0.821053 rgba(93, 90, 80, 130), stop:1 rgba(255, 255, 0, 69));
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>&amp;ADD</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="deleteButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: qconicalgradient(cx:0.005, cy:0.0113636, angle:135, stop:0 rgba(68, 68, 68, 69), stop:0.210526 rgba(93, 93, 93, 255), stop:0.331579 rgba(68, 65, 19, 232), stop:0.363158 rgba(98, 98, 98, 130), stop:0.423533 rgba(132, 132, 132, 254), stop:0.45 rgba(115, 115, 115, 208), stop:0.594737 rgba(107, 107, 107, 255), stop:0.694737 rgba(115, 115, 0, 69), stop:0.821053 rgba(93, 90, 80, 130), stop:1 rgba(255, 255, 0, 69));
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>&amp;DELETE</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QTableView" name="tableView">
+       <property name="styleSheet">
+        <string notr="true">alternate-background-color: rgb(193, 255, 213);
+
+     
+  /*  QTableView::item:selected {
+	font: 75 25 pt &quot;Times New Roman&quot;;
+    background-color: qlineargradient(spread:pad, x1:0.980392, y1:1, x2:0.931373, y2:0.193, stop:1 rgba(150, 150, 150, 255));
+    }
+     
+  
+ 
+ QTableView QTableCornerButton::section {
+	background-color: qconicalgradient(cx:0.5, cy:0.5, angle:0, stop:0.0107527 rgba(255, 255, 255, 255), stop:0.129032 rgba(255, 255, 255, 255), stop:0.236559 rgba(204, 204, 204, 255), stop:0.241935 rgba(235, 235, 235, 255), stop:0.333333 rgba(245, 245, 245, 255), stop:0.430108 rgba(209, 209, 209, 255), stop:0.516129 rgba(187, 187, 187, 255), stop:0.596774 rgba(255, 255, 255, 255), stop:0.695 rgba(202, 202, 202, 255), stop:0.75 rgba(218, 218, 218, 255), stop:0.815 rgba(255, 255, 255, 255), stop:0.88 rgba(255, 255, 255, 255), stop:1 rgba(204, 204, 204, 255));
+     border: 2px ;
+ }*/</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

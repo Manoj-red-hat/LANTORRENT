@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>images/H.svg</file>
+        <file>images/D.svg</file>
+        <file>images/S.svg</file>
+    </qresource>
+</RCC>

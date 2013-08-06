@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FileSearchWidget</class>
+ <widget class="QWidget" name="FileSearchWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>678</width>
+    <height>282</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FileSearchWidget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>188</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>&amp;File Name</string>
+         </property>
+         <property name="buddy">
+          <cstring>searchLineEdit</cstring>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="searchLineEdit"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="searchButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qconicalgradient(cx:0.5, cy:0.5, angle:0, stop:0.0107527 rgba(255, 255, 255, 255), stop:0.129032 rgba(255, 255, 255, 255), stop:0.236559 rgba(204, 204, 204, 255), stop:0.241935 rgba(235, 235, 235, 255), stop:0.333333 rgba(245, 245, 245, 255), stop:0.430108 rgba(209, 209, 209, 255), stop:0.516129 rgba(187, 187, 187, 255), stop:0.596774 rgba(255, 255, 255, 255), stop:0.695 rgba(202, 202, 202, 255), stop:0.75 rgba(218, 218, 218, 255), stop:0.815 rgba(255, 255, 255, 255), stop:0.88 rgba(255, 255, 255, 255), stop:1 rgba(204, 204, 204, 255));
+color: rgb(0, 0, 0);
+     border-style: outset;
+     border-width: 2px;
+     border-radius: 10px;
+     border-color: beige;
+     font: 14px;
+     min-width: 10em;
+     padding: 3px;
+ 
+ QPushButton#evilButton:pressed {
+     background-color: rgb(224, 0, 0);
+
+ }</string>
+         </property>
+         <property name="text">
+          <string>&amp;Search</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>148</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <widget class="QTableView" name="tableView">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+    QTableView {
+	alternate-background-color: rgb(193, 255, 213);
+
+    }
+     
+    QTableView::item:selected {
+	font: 75 25 pt &quot;Times New Roman&quot;;
+    background-color: qlineargradient(spread:pad, x1:0.980392, y1:1, x2:0.931373, y2:0.193, stop:1 rgba(150, 150, 150, 255));
+    }
+     
+  
+ 
+ QTableView QTableCornerButton::section {
+	background-color: qconicalgradient(cx:0.5, cy:0.5, angle:0, stop:0.0107527 rgba(255, 255, 255, 255), stop:0.129032 rgba(255, 255, 255, 255), stop:0.236559 rgba(204, 204, 204, 255), stop:0.241935 rgba(235, 235, 235, 255), stop:0.333333 rgba(245, 245, 245, 255), stop:0.430108 rgba(209, 209, 209, 255), stop:0.516129 rgba(187, 187, 187, 255), stop:0.596774 rgba(255, 255, 255, 255), stop:0.695 rgba(202, 202, 202, 255), stop:0.75 rgba(218, 218, 218, 255), stop:0.815 rgba(255, 255, 255, 255), stop:0.88 rgba(255, 255, 255, 255), stop:1 rgba(204, 204, 204, 255));
+     border: 2px ;
+ }</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <spacer name="horizontalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="downloadButton">
+         <property name="styleSheet">
+          <string notr="true">background-color: qconicalgradient(cx:0.5, cy:0.5, angle:0, stop:0.0107527 rgba(255, 255, 255, 255), stop:0.129032 rgba(255, 255, 255, 255), stop:0.236559 rgba(204, 204, 204, 255), stop:0.241935 rgba(235, 235, 235, 255), stop:0.333333 rgba(245, 245, 245, 255), stop:0.430108 rgba(209, 209, 209, 255), stop:0.516129 rgba(187, 187, 187, 255), stop:0.596774 rgba(255, 255, 255, 255), stop:0.695 rgba(202, 202, 202, 255), stop:0.75 rgba(218, 218, 218, 255), stop:0.815 rgba(255, 255, 255, 255), stop:0.88 rgba(255, 255, 255, 255), stop:1 rgba(204, 204, 204, 255));
+color: rgb(0, 0, 0);
+     border-style: outset;
+     border-width: 2px;
+     border-radius: 10px;
+     border-color: beige;
+     font:14px;
+     min-width: 10em;
+     padding: 3px;
+ 
+ QPushButton#evilButton:pressed {
+     background-color: rgb(224, 0, 0);
+     border-style: inset;
+ }</string>
+         </property>
+         <property name="text">
+          <string>&amp;Download</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

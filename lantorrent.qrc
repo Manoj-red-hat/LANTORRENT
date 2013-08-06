@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/find.svg</file>
+        <file>image/prefrences.svg</file>
+        <file>image/sharing.svg</file>
+        <file>image/help.svg</file>
+        <file>image/Download.svg</file>
+        <file>image/downloadDirectory.svg</file>
+        <file>image/hostname.svg</file>
+        <file>image/welcome.svg</file>
+        <file>image/exit.svg</file>
+    </qresource>
+</RCC>

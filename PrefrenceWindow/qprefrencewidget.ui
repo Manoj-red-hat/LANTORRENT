@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QPrefrenceWidget</class>
+ <widget class="QWidget" name="QPrefrenceWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>690</width>
+    <height>572</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>QPrefrenceWidget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QDockWidget" name="dockWidget">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>243</width>
+         <height>341</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton { /* all types of tool button */
+     border: 2px solid #8f8f91;
+     border-radius: 6px;
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f6f7fa, stop: 1 #dadbde);
+ }
+</string>
+       </property>
+       <property name="features">
+        <set>QDockWidget::NoDockWidgetFeatures</set>
+       </property>
+       <property name="allowedAreas">
+        <set>Qt::LeftDockWidgetArea</set>
+       </property>
+       <widget class="QWidget" name="dockWidgetContents">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="hostnameButton">
+           <property name="styleSheet">
+            <string notr="true"> QPushButton {
+	
+     border-style: outset;
+     border-width: 2px;
+     border-radius: 10px;
+     border-color: beige;
+     font: bold 14px;
+     min-width: 10em;
+     padding: 6px;
+ }
+ QPushButton:checked{
+    background-color: qconicalgradient(cx:0.005, cy:0.0113636, angle:135, stop:0 rgba(68, 68, 68, 69), stop:0.210526 rgba(93, 93, 93, 255), stop:0.331579 rgba(68, 65, 19, 232), stop:0.363158 rgba(98, 98, 98, 130), stop:0.423533 rgba(132, 132, 132, 254), stop:0.45 rgba(115, 115, 115, 208), stop:0.594737 rgba(107, 107, 107, 255), stop:0.694737 rgba(115, 115, 0, 69), stop:0.821053 rgba(93, 90, 80, 130), stop:1 rgba(255, 255, 0, 69));
+     border-style: inset;
+	color: rgb(255, 255, 255);
+ }</string>
+           </property>
+           <property name="text">
+            <string>&amp;Hostname</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../lantorrent.qrc">
+             <normaloff>:/image/hostname.svg</normaloff>:/image/hostname.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>60</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoDefault">
+            <bool>false</bool>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="sharing">
+           <property name="styleSheet">
+            <string notr="true"> QPushButton {
+	
+     border-style: outset;
+     border-width: 2px;
+     border-radius: 10px;
+     border-color: beige;
+     font: bold 14px;
+     min-width: 10em;
+     padding: 6px;
+ }
+ QPushButton:checked{
+    background-color: qconicalgradient(cx:0.005, cy:0.0113636, angle:135, stop:0 rgba(68, 68, 68, 69), stop:0.210526 rgba(93, 93, 93, 255), stop:0.331579 rgba(68, 65, 19, 232), stop:0.363158 rgba(98, 98, 98, 130), stop:0.423533 rgba(132, 132, 132, 254), stop:0.45 rgba(115, 115, 115, 208), stop:0.594737 rgba(107, 107, 107, 255), stop:0.694737 rgba(115, 115, 0, 69), stop:0.821053 rgba(93, 90, 80, 130), stop:1 rgba(255, 255, 0, 69));
+     border-style: inset;
+	color: rgb(255, 255, 255);
+ }</string>
+           </property>
+           <property name="text">
+            <string>&amp;Sharing Folder</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../lantorrent.qrc">
+             <normaloff>:/image/sharing.svg</normaloff>:/image/sharing.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>60</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoDefault">
+            <bool>false</bool>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="downloadButton">
+           <property name="styleSheet">
+            <string notr="true"> QPushButton {
+	
+     border-style: outset;
+     border-width: 2px;
+     border-radius: 10px;
+     border-color: beige;
+     font: bold 14px;
+     min-width: 10em;
+     padding: 6px;
+ }
+ QPushButton:checked{
+    background-color: qconicalgradient(cx:0.005, cy:0.0113636, angle:135, stop:0 rgba(68, 68, 68, 69), stop:0.210526 rgba(93, 93, 93, 255), stop:0.331579 rgba(68, 65, 19, 232), stop:0.363158 rgba(98, 98, 98, 130), stop:0.423533 rgba(132, 132, 132, 254), stop:0.45 rgba(115, 115, 115, 208), stop:0.594737 rgba(107, 107, 107, 255), stop:0.694737 rgba(115, 115, 0, 69), stop:0.821053 rgba(93, 90, 80, 130), stop:1 rgba(255, 255, 0, 69));
+     border-style: inset;
+	color: rgb(255, 255, 255);
+ }</string>
+           </property>
+           <property name="text">
+            <string>&amp;Download Directory</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../lantorrent.qrc">
+             <normaloff>:/image/downloadDirectory.svg</normaloff>:/image/downloadDirectory.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>60</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoDefault">
+            <bool>false</bool>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="widget" native="true">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	background-color: qconicalgradient(cx:0.005, cy:0.0113636, angle:135, stop:0 rgba(68, 68, 68, 69), stop:0.210526 rgba(93, 93, 93, 255), stop:0.331579 rgba(68, 65, 19, 232), stop:0.363158 rgba(98, 98, 98, 130), stop:0.423533 rgba(132, 132, 132, 254), stop:0.45 rgba(115, 115, 115, 208), stop:0.594737 rgba(107, 107, 107, 255), stop:0.694737 rgba(115, 115, 0, 69), stop:0.821053 rgba(93, 90, 80, 130), stop:1 rgba(255, 255, 0, 69));
+}
+ QHeaderView::section {
+	background-color: white;
+     color: black;
+     padding-left: 4px;
+     border: 1px solid #6c6c6c;
+ }
+
+ QHeaderView::section:checked
+ {
+     
+	background-color: qconicalgradient(cx:0.005, cy:0.0113636, angle:135, stop:0 rgba(68, 68, 68, 69), stop:0.210526 rgba(93, 93, 93, 255), stop:0.331579 rgba(68, 65, 19, 232), stop:0.363158 rgba(98, 98, 98, 130), stop:0.423533 rgba(132, 132, 132, 254), stop:0.45 rgba(115, 115, 115, 208), stop:0.594737 rgba(107, 107, 107, 255), stop:0.694737 rgba(115, 115, 0, 69), stop:0.821053 rgba(93, 90, 80, 130), stop:1 rgba(255, 255, 0, 69));
+ }
+    QTableView {
+	alternate-background-color: rgb(193, 255, 213);
+
+    }
+     
+    QTableView::item:selected {
+	font: 75 25 pt &quot;Times New Roman&quot;;
+    background-color: qlineargradient(spread:pad, x1:0.980392, y1:1, x2:0.931373, y2:0.193, stop:1 rgba(150, 150, 150, 255));
+    }
+     
+  
+ 
+ QTableView QTableCornerButton::section {
+	
+	color: rgb(9, 9, 9);
+     border: 2px ;
+ }</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="1">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>93</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="0" colspan="3">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="hostnameLabel">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255,255,255);
+background-color: qconicalgradient(cx:0.005, cy:0.0113636, angle:135, stop:0 rgba(68, 68, 68, 69), stop:0.210526 rgba(93, 93, 93, 255), stop:0.331579 rgba(68, 65, 19, 232), stop:0.363158 rgba(98, 98, 98, 130), stop:0.423533 rgba(132, 132, 132, 254), stop:0.45 rgba(115, 115, 115, 208), stop:0.594737 rgba(107, 107, 107, 255), stop:0.694737 rgba(115, 115, 0, 69), stop:0.821053 rgba(93, 90, 80, 130), stop:1 rgba(255, 255, 0, 69));
+font: 18pt &quot;Abyssinica SIL&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Enter Hostname</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="1">
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>18</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="3" column="0" colspan="3">
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>58</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="downloadDiectory"/>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>28</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item row="4" column="0">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>84</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="4" column="1">
+         <widget class="QPushButton" name="browseButton">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Browse</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>103</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="5" column="1">
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>198</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+       <zorder>browseButton</zorder>
+       <zorder>verticalSpacer</zorder>
+       <zorder>verticalSpacer_3</zorder>
+       <zorder>horizontalSpacer</zorder>
+       <zorder>horizontalSpacer_2</zorder>
+       <zorder>verticalSpacer_2</zorder>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../lantorrent.qrc"/>
+ </resources>
+ <connections/>
+</ui>
